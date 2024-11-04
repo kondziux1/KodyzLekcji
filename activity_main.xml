@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:background="#f5f5dc"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/losuj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#DD0E0E"
+            android:text="Losuj" />
+
+
+        <GridLayout
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:columnCount="3">
+
+
+            <ImageView
+                android:id="@+id/kostka1"
+                android:layout_width="84dp"
+                android:layout_height="86dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/kostka_x"
+                tools:layout_editor_absoluteX="27dp"
+                tools:layout_editor_absoluteY="190dp"
+                tools:srcCompat="@drawable/kostka_x" />
+
+            <ImageView
+                android:id="@+id/kostka2"
+                android:layout_width="84dp"
+                android:layout_height="86dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/kostka_x" />
+
+            <ImageView
+                android:id="@+id/kostka3"
+                android:layout_width="84dp"
+                android:layout_height="86dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/kostka_x" />
+
+            <ImageView
+                android:id="@+id/kostka4"
+                android:layout_width="84dp"
+                android:layout_height="86dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/kostka_x" />
+
+            <ImageView
+                android:id="@+id/kostka5"
+                android:layout_width="84dp"
+                android:layout_height="86dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/kostka_x" />
+
+            <ImageView
+                android:id="@+id/kostka6"
+                android:layout_width="84dp"
+                android:layout_height="86dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/kostka_x" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/wynikText"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:text="Wynik losowania: 0"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/wynikGry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Wynik gry: 0"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/resetuj"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#D20101"
+            android:text="Resetuj" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:background="#ffff"
+            android:orientation="horizontal"
+
+            ></LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
