@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlazowaKosteczka.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            BackgroundColor="Beige">
+
+            <Label Text="Gra w kości. Autor Anna"
+                   BackgroundColor="Brown"
+                   TextColor="White"
+                   FontSize="24"
+                   HorizontalOptions="Center"
+                   Padding="15" />
+
+            <Button x:Name="RollDiceButton"
+                    Text="RZUĆ KOŚĆMI"
+                    BackgroundColor="Chocolate"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="OnRollDiceClicked" />
+
+            <HorizontalStackLayout BackgroundColor="White"
+                                    HorizontalOptions="Fill"
+                                    Spacing="9"
+                                    Padding="10">
+                <Image x:Name="Die1" Source="nx.png" HeightRequest="60" WidthRequest="60" />
+                <Image x:Name="Die2" Source="nx.png" HeightRequest="60" WidthRequest="60" />
+                <Image x:Name="Die3" Source="nx.png" HeightRequest="60" WidthRequest="60" />
+                <Image x:Name="Die4" Source="nx.png" HeightRequest="60" WidthRequest="60" />
+                <Image x:Name="Die5" Source="nx.png" HeightRequest="60" WidthRequest="60" />
+            </HorizontalStackLayout>
+
+            <Label x:Name="RollResultLabel"
+                   Text="Wynik tego losowania: 0"
+                   HorizontalOptions="Center" />
+
+            <Label x:Name="GameResultLabel"
+                   Text="Wynik gry: 0"
+                   HorizontalOptions="Center" />
+
+            <Button x:Name="ResetButton"
+                    Text="RESETUJ WYNIK"
+                    BackgroundColor="Chocolate"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="OnResetClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
